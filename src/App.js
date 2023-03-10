@@ -26,14 +26,17 @@ const cats = [
   {
     id: "cocc.jpg",
     src: images[0],
+    style: { top: "-25%", height: "170%", width: "200vw" },
   },
   {
     id: "mais.jpg",
     src: images[1],
+    style: { top: "-40%", height: "200%" },
   },
   {
     id: "pancc.jpg",
     src: images[2],
+    style: { top: "-50%", height: "200%" },
   },
 ];
 
@@ -84,13 +87,15 @@ function Taiko() {
 
 function Cat() {
   const { cat } = useParams();
+  const catto = cats.find((c) => c.id === cat);
   console.log(cats.find((c) => c.id === cat).src);
   return (
     <div className="fit-container">
       <img
-        className="overflow-hidden w-screen h-[100vh]"
-        src={cats.find((c) => c.id === cat).src}
+        className="w-screen absolute"
+        src={catto.src}
         alt="cat"
+        style={catto.style}
       ></img>
     </div>
   );
