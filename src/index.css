@@ -12,3 +12,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.felicidades::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 10vw;
+  top: 0;
+  width: 78%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url('../public/duck-spinning.gif');
+  background-repeat: repeat;
+}
+.felicidades > p {
+  z-index:9999;
+}

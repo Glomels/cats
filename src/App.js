@@ -48,6 +48,16 @@ function App() {
           <Route path="/" element={<Entry />} key="entry" />
           <Route path="taiko" element={<Taiko />} key="taiko" />
           <Route path="cat/:cat" element={<Cat />} key="cat" />
+          <Route
+            path="pollo-chungon"
+            element={
+              <div className="felicidades text-[16rem] font-semibold w-[95vw] ml-[1vw] text-center px-[10vw] h-screen flex flex-col align-center justify-center">
+                <p>FELICIDADES</p>
+                <p>ALA VERGA</p>
+              </div>
+            }
+            key="cat"
+          />
         </Routes>
       </BrowserRouter>
     </>
