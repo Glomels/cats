@@ -10,7 +10,7 @@ import {
 import { ReactComponent as LoaderSVG } from "./loader.svg";
 import "./App.css";
 
-const images = ["cocc.jpg", "mais.jpg", "pancc.jpg", "mens.jpg"];
+const images = ["/cocc.jpg", "/mais.jpg", "/pancc.jpg", "/mens.jpg"];
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -27,7 +27,7 @@ const cats = [
   {
     id: "mais.jpg",
     src: images[1],
-    style: { top: "-40%", height: "200%" },
+    style: { top: "-50%", height: "200%" },
   },
   {
     id: "pancc.jpg",
