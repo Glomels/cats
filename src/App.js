@@ -22,22 +22,19 @@ const cats = [
   {
     id: "cocc.jpg",
     src: images[0],
-    style: { top: "-25%", height: "170%", width: "200vw" },
+    style: { top: "-25%", width: "200vw" },
   },
   {
     id: "mais.jpg",
     src: images[1],
-    style: { top: "-50%", height: "200%" },
   },
   {
     id: "pancc.jpg",
     src: images[2],
-    style: { top: "-50%", height: "200%" },
   },
   {
     id: "mens.jpg",
     src: images[3],
-    style: { top: "-40%", height: "200%" },
   },
 ];
 
@@ -103,7 +100,7 @@ function Cat() {
   return (
     <div className="fit-container">
       <img
-        className="w-screen absolute"
+        className="w-screen h-screen fit-container"
         src={catto.src}
         alt="cat"
         style={catto.style}
