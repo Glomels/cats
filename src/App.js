@@ -83,7 +83,7 @@ function Taiko() {
   const navigate = useNavigate();
   useEffect(() => {
     setTimeout(() => {
-      navigate({ pathname: `/cat/${cats[getRandomInt(0, 3)].id}` });
+      navigate({ pathname: `/cat/${cats[getRandomInt(0, 4)].id}` });
     }, 3000);
   });
   return (
