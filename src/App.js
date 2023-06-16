@@ -10,11 +10,7 @@ import {
 import { ReactComponent as LoaderSVG } from "./loader.svg";
 import "./App.css";
 
-const images = [
-  "https://scontent.fmxl1-1.fna.fbcdn.net/v/t1.15752-9/317394446_824556061934277_8074398698735657137_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=09AIRLoFmlYAX9Y-SQr&_nc_ht=scontent.fmxl1-1.fna&oh=03_AdQ5Tb3-R16hZxSSq9lNR55MBLiXg2a-eBI1qLw9fbAyrg&oe=6431F60D",
-  "https://scontent.fmxl1-1.fna.fbcdn.net/v/t1.15752-9/331343482_759640195545940_4882691720906945821_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=vMzf07Luh3UAX-segB9&_nc_ht=scontent.fmxl1-1.fna&oh=03_AdRWP4jIrjcdsZNJxKCG4ZTuf887_gpUnWd9nJt-dGEzPQ&oe=6431E512",
-  "https://scontent.fmxl1-1.fna.fbcdn.net/v/t1.15752-9/330858094_583541357032269_4019493975068760288_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=7tuP26XWQogAX9-aYwh&_nc_ht=scontent.fmxl1-1.fna&oh=03_AdTHMaDIhUl-TzeS-7_Woyz2SiAHbEcC-KtPGPcMtpOM7w&oe=6431F683",
-];
+const images = ["cocc.jpg", "mais.jpg", "pancc.jpg", "mens.jpg"];
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -37,6 +33,11 @@ const cats = [
     id: "pancc.jpg",
     src: images[2],
     style: { top: "-50%", height: "200%" },
+  },
+  {
+    id: "mens.jpg",
+    src: images[3],
+    style: { top: "-40%", height: "200%" },
   },
 ];
 
